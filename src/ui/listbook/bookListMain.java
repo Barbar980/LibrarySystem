@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class bookListMain extends Application {
-    //https://www.youtube.com/watch?v=qK-yD7gfX7Y&list=PLhs1urmduZ29jTcE1ca8Z6bZNvH_39ayL&index=9&t=0s
+    
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("listBookForm.fxml"));
