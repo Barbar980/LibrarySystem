@@ -104,8 +104,6 @@ public class addBookController implements Initializable {
             } catch (SQLException ex) {
                 Logger.getLogger(addBookController.class.getName()).log(Level.SEVERE,null, ex);
             }
-
-
     }
 
 }
