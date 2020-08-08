@@ -39,8 +39,7 @@ public class addMemberController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        databaseHandler = new DatabaseHandler();
-        checkData();
+        databaseHandler = DatabaseHandler.getInstance();
     }
 
     @FXML

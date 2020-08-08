@@ -1,4 +1,4 @@
-package ui.listbook;
+package ui.main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,12 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class bookListMain extends Application {
+public class mainMain extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("listBookForm.fxml"));
-        stage.setTitle("Book list");
+        Parent root = FXMLLoader.load(getClass().getResource("mainForm.fxml"));
+        stage.setTitle("LibraryManagment");
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
