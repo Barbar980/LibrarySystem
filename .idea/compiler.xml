@@ -11,10 +11,21 @@
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="LibrarySoftware" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LibrarySoftware" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="LibrarySoftware" options="--add-exports jdk.scripting.nashorn/jdk.nashorn.internal.ir=ALL-UNNAMED" />
+      <module name="LibrarySoftware" options="" />
     </option>
   </component>
 </project>

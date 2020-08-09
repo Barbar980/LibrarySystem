@@ -39,7 +39,7 @@ public class listBookController implements Initializable {
     @FXML
     public TableColumn<Book, Boolean> availabilityCol;
 
-    @Override
+
     public void initialize(URL url, ResourceBundle rb) {
         initCol();
 
@@ -70,11 +70,11 @@ public class listBookController implements Initializable {
     }
 
     private void initCol() {
-        idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
-        titleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
-        authorCol.setCellValueFactory(new PropertyValueFactory<>("author"));
-        publisherCol.setCellValueFactory(new PropertyValueFactory<>("publisher"));
-        availabilityCol.setCellValueFactory(new PropertyValueFactory<>("availability"));
+        idCol.setCellValueFactory(new PropertyValueFactory("id"));
+        titleCol.setCellValueFactory(new PropertyValueFactory("title"));
+        authorCol.setCellValueFactory(new PropertyValueFactory("author"));
+        publisherCol.setCellValueFactory(new PropertyValueFactory("publisher"));
+        availabilityCol.setCellValueFactory(new PropertyValueFactory("availability"));
     }
 
     public static class Book{

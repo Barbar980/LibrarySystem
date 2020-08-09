@@ -37,17 +37,17 @@ public class listMemberController implements Initializable {
     @FXML
     public TableColumn<Member, String> emailCol;
 
-    @Override
+
     public void initialize(URL url, ResourceBundle resourceBundle) {
         initCol();
         loadData();
     }
 
     private void initCol() {
-        idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
-        nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
-        mobileCol.setCellValueFactory(new PropertyValueFactory<>("mobile"));
-        emailCol.setCellValueFactory(new PropertyValueFactory<>("email"));
+        idCol.setCellValueFactory(new PropertyValueFactory("id"));
+        nameCol.setCellValueFactory(new PropertyValueFactory("name"));
+        mobileCol.setCellValueFactory(new PropertyValueFactory("mobile"));
+        emailCol.setCellValueFactory(new PropertyValueFactory("email"));
 
     }
 
